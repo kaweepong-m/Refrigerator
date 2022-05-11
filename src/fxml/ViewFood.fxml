@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #66ffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="refrigerator.ViewFoodController">
+   <children>
+      <AnchorPane layoutX="13.0" layoutY="14.0" prefHeight="372.0" prefWidth="675.0" style="-fx-background-color: #33ccff; -fx-background-radius: 30 30 30 30;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="591.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/picture/view_120px.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="foodTableView" layoutX="14.0" layoutY="10.0" prefHeight="347.0" prefWidth="576.0">
+              <columns>
+                <TableColumn fx:id="nameTableView" prefWidth="75.0" text="Name" />
+                <TableColumn fx:id="typeTableView" prefWidth="75.0" text="Type" />
+                  <TableColumn fx:id="numberTableView" prefWidth="55.0" text="Number" />
+                  <TableColumn fx:id="unitTableView" prefWidth="65.0" text="Unit" />
+                  <TableColumn fx:id="inputDateTableView" prefWidth="99.0" text="InputDate" />
+                  <TableColumn fx:id="EXPTableView" prefWidth="119.0" text="Expiration Date" />
+                  <TableColumn fx:id="statusTableView" prefWidth="87.0" text="Status" />
+              </columns>
+            </TableView>
+            <Label fx:id="test" layoutX="597.0" layoutY="171.0" prefHeight="26.0" prefWidth="70.0">
+               <font>
+                  <Font name="WaffleRegular" size="24.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

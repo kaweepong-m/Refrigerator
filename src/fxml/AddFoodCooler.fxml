@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="620.0" style="-fx-background-color: #66ffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="refrigerator.AddFoodCoolerController">
+   <children>
+      <AnchorPane layoutX="13.0" layoutY="14.0" prefHeight="372.0" prefWidth="595.0" style="-fx-background-color: #33ccff; -fx-background-radius: 30 30 30 30;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <ImageView fx:id="foodImage" fitHeight="120.0" fitWidth="172.0" layoutX="189.0" layoutY="235.0" pickOnBounds="true" />
+            <Label layoutX="56.0" layoutY="38.0" text="Food Name : ">
+               <font>
+                  <Font name="WaffleRegular" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="75.0" text="Food Type :">
+               <font>
+                  <Font name="WaffleRegular" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="76.0" layoutY="113.0" text="Food Unit :">
+               <font>
+                  <Font name="WaffleRegular" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="189.0" text="Expiration Date :">
+               <font>
+                  <Font name="WaffleRegular" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="46.0" layoutY="227.0" text="Food Picture :">
+               <font>
+                  <Font name="WaffleRegular" size="36.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameTextField" layoutX="189.0" layoutY="45.0" prefHeight="25.0" prefWidth="287.0" promptText="Enter Food Name" />
+            <TextField fx:id="unitTextField" layoutX="189.0" layoutY="119.0" prefHeight="25.0" prefWidth="287.0" promptText="Enter Food Unit" />
+            <TextField fx:id="numberTextField" layoutX="189.0" layoutY="157.0" prefHeight="25.0" prefWidth="287.0" promptText="Enter Amount of Food" />
+            <Label layoutX="21.0" layoutY="151.0" text="Amount of Food :">
+               <font>
+                  <Font name="WaffleRegular" size="36.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="expDatePicker" layoutX="189.0" layoutY="195.0" prefHeight="25.0" prefWidth="287.0" promptText="Enter Expiration Date " />
+            <Label layoutX="216.0" text="Add Food!!!">
+               <font>
+                  <Font name="WaffleRegular" size="48.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="foodTypeComboBox" layoutX="189.0" layoutY="82.0" prefHeight="25.0" prefWidth="287.0" promptText="Choose Food Type" />
+            <ComboBox fx:id="coolerSlotComboBox" layoutX="485.0" layoutY="82.0" prefHeight="7.0" prefWidth="70.0" promptText="Slot" />
+            <Button fx:id="backCoolerButton" layoutX="491.0" layoutY="4.0" mnemonicParsing="false" onAction="#handleBackCoolerButton" prefHeight="69.0" prefWidth="70.0" styleClass="button1" stylesheets="@../css/fullpackstyling.css">
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/picture/fridge_with_open_door_120px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ComboBox fx:id="status" layoutX="485.0" layoutY="120.0" prefHeight="25.0" prefWidth="85.0" promptText="status" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="addImage" layoutX="382.0" layoutY="263.0" mnemonicParsing="false" onAction="#handle" prefHeight="38.0" prefWidth="43.0" styleClass="button1" stylesheets="@../css/fullpackstyling.css">
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/picture/plus_120px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="433.0" layoutY="257.0" mnemonicParsing="false" onAction="#handleClearButton" prefHeight="50.0" prefWidth="53.0" styleClass="button2remove" stylesheets="@../css/fullpackstyling.css">
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/picture/clear_formatting_120px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="addButton" layoutX="433.0" layoutY="315.0" mnemonicParsing="false" onAction="#handleAddButton" prefHeight="50.0" prefWidth="53.0" styleClass="button3save" stylesheets="@../css/fullpackstyling.css">
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/picture/save_close_120px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="780.0" style="-fx-background-color: #66ffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="refrigerator.CoolerMainController">
+   <children>
+      <Button fx:id="homeButton" layoutX="364.0" layoutY="522.0" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="51.0" prefWidth="53.0" styleClass="button1" stylesheets="@../css/fullpackstyling.css">
+         <graphic>
+            <ImageView fitHeight="36.0" fitWidth="36.0">
+               <image>
+                  <Image url="@../resources/picture/home_120px.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <AnchorPane layoutX="16.0" layoutY="14.0" prefHeight="502.0" prefWidth="749.0" style="-fx-background-color: #33ccff; -fx-background-radius: 30 30 30 30;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Button fx:id="addFoodCoolerButton" layoutX="15.0" layoutY="162.0" mnemonicParsing="false" onAction="#handleAddCoolerButton" prefHeight="70.0" prefWidth="73.0" styleClass="button1" stylesheets="@../css/fullpackstyling.css">
+               <graphic>
+                  <ImageView fitHeight="47.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/picture/plus_120px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <AnchorPane layoutX="96.0" layoutY="14.0" prefHeight="474.0" prefWidth="630.0" style="-fx-background-color: #9933ff; -fx-background-radius: 30 30 30 30;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="204.0" prefWidth="191.0" style="-fx-background-color: #e6ccff; -fx-background-radius: 30 30 30 30;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <children>
+                        <Button layoutX="137.0" layoutY="167.0" mnemonicParsing="false" onAction="#handleViewFoodCooler1" prefHeight="32.0" prefWidth="33.0" styleClass="button4view" stylesheets="@../css/fullpackstyling.css">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/picture/view_120px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <AnchorPane layoutX="10.0" layoutY="14.0" prefHeight="146.0" prefWidth="171.0" style="-fx-background-color: #f3e6ff; -fx-background-radius: 30 30 30 30;">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <Label fx:id="coolerName1" layoutX="13.0" layoutY="107.0">
+                                 <font>
+                                    <Font name="WaffleRegular" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="coolerEXP1" layoutX="13.0" layoutY="124.0">
+                                 <font>
+                                    <Font name="WaffleRegular" size="24.0" />
+                                 </font></Label>
+                              <ImageView fx:id="coolerImage1" fitHeight="89.0" fitWidth="149.0" layoutX="12.0" layoutY="14.0" pickOnBounds="true" />
+                           </children>
+                        </AnchorPane>
+                        <Label fx:id="coolerNumberFood1" layoutX="18.0" layoutY="170.0">
+                           <font>
+                              <Font name="WaffleRegular" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="220.0" layoutY="14.0" prefHeight="204.0" prefWidth="191.0" style="-fx-background-color: #e6ccff; -fx-background-radius: 30 30 30 30;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <children>
+                        <Label fx:id="coolerNumberFood2" layoutX="18.0" layoutY="170.0">
+                           <font>
+                              <Font name="WaffleRegular" size="24.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="130.0" layoutY="167.0" mnemonicParsing="false" onAction="#handleViewFoodCooler2" prefHeight="32.0" prefWidth="33.0" styleClass="button4view" stylesheets="@../css/fullpackstyling.css">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/picture/view_120px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <AnchorPane layoutX="10.0" layoutY="14.0" prefHeight="146.0" prefWidth="171.0" style="-fx-background-color: #f3e6ff; -fx-background-radius: 30 30 30 30;">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <Label fx:id="coolerEXP2" layoutX="13.0" layoutY="124.0">
+                                 <font>
+                                    <Font name="WaffleRegular" size="24.0" />
+                                 </font></Label>
+                              <ImageView fx:id="coolerImage2" fitHeight="89.0" fitWidth="149.0" layoutX="12.0" layoutY="14.0" pickOnBounds="true" />
+                              <Label fx:id="coolerName2" layoutX="13.0" layoutY="107.0">
+                                 <font>
+                                    <Font name="WaffleRegular" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="425.0" layoutY="14.0" prefHeight="204.0" prefWidth="191.0" style="-fx-background-color: #e6ccff; -fx-background-radius: 30 30 30 30;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <children>
+                        <Button layoutX="130.0" layoutY="167.0" mnemonicParsing="false" onAction="#handleViewFoodCooler3" prefHeight="32.0" prefWidth="33.0" styleClass="button4view" stylesheets="@../css/fullpackstyling.css">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/picture/view_120px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <AnchorPane layoutX="10.0" layoutY="14.0" prefHeight="146.0" prefWidth="171.0" style="-fx-background-color: #f3e6ff; -fx-background-radius: 30 30 30 30;">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <Label fx:id="coolerEXP3" layoutX="13.0" layoutY="124.0">
+                                 <font>
+                                    <Font name="WaffleRegular" size="24.0" />
+                                 </font></Label>
+                              <ImageView fx:id="coolerImage3" fitHeight="89.0" fitWidth="149.0" layoutX="12.0" layoutY="14.0" pickOnBounds="true" />
+                              <Label fx:id="coolerName3" layoutX="13.0" layoutY="107.0">
+                                 <font>
+                                    <Font name="WaffleRegular" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <Label fx:id="coolerNumberFood3" layoutX="18.0" layoutY="170.0">
+                           <font>
+                              <Font name="WaffleRegular" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="14.0" layoutY="237.0" prefHeight="204.0" prefWidth="191.0" style="-fx-background-color: #e6ccff; -fx-background-radius: 30 30 30 30;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <children>
+                        <Label fx:id="coolerNumberFood4" layoutX="18.0" layoutY="170.0">
+                           <font>
+                              <Font name="WaffleRegular" size="24.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="130.0" layoutY="167.0" mnemonicParsing="false" onAction="#handleViewFoodCooler4" prefHeight="32.0" prefWidth="33.0" styleClass="button4view" stylesheets="@../css/fullpackstyling.css">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/picture/view_120px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <AnchorPane layoutX="10.0" layoutY="14.0" prefHeight="146.0" prefWidth="171.0" style="-fx-background-color: #f3e6ff; -fx-background-radius: 30 30 30 30;">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <Label fx:id="coolerName4" layoutX="13.0" layoutY="107.0">
+                                 <font>
+                                    <Font name="WaffleRegular" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="coolerEXP4" layoutX="13.0" layoutY="124.0">
+                                 <font>
+                                    <Font name="WaffleRegular" size="24.0" />
+                                 </font></Label>
+                              <ImageView fx:id="coolerImage4" fitHeight="89.0" fitWidth="149.0" layoutX="12.0" layoutY="14.0" pickOnBounds="true" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="220.0" layoutY="237.0" prefHeight="204.0" prefWidth="191.0" style="-fx-background-color: #e6ccff; -fx-background-radius: 30 30 30 30;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <children>
+                        <Label fx:id="coolerNumberFood5" layoutX="18.0" layoutY="170.0">
+                           <font>
+                              <Font name="WaffleRegular" size="24.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="130.0" layoutY="167.0" mnemonicParsing="false" onAction="#handleViewFoodCooler5" prefHeight="32.0" prefWidth="33.0" styleClass="button4view" stylesheets="@../css/fullpackstyling.css">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/picture/view_120px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <AnchorPane layoutX="10.0" layoutY="14.0" prefHeight="146.0" prefWidth="171.0" style="-fx-background-color: #f3e6ff; -fx-background-radius: 30 30 30 30;">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <Label fx:id="coolerEXP5" layoutX="13.0" layoutY="124.0">
+                                 <font>
+                                    <Font name="WaffleRegular" size="24.0" />
+                                 </font></Label>
+                              <ImageView fx:id="coolerImage5" fitHeight="89.0" fitWidth="149.0" layoutX="12.0" layoutY="14.0" pickOnBounds="true" />
+                              <Label fx:id="coolerName5" layoutX="13.0" layoutY="107.0">
+                                 <font>
+                                    <Font name="WaffleRegular" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="425.0" layoutY="237.0" prefHeight="204.0" prefWidth="191.0" style="-fx-background-color: #e6ccff; -fx-background-radius: 30 30 30 30;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <children>
+                        <Label fx:id="coolerNumberFood6" layoutX="18.0" layoutY="170.0">
+                           <font>
+                              <Font name="WaffleRegular" size="24.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="130.0" layoutY="167.0" mnemonicParsing="false" onAction="#handleViewFoodCooler6" prefHeight="32.0" prefWidth="33.0" styleClass="button4view" stylesheets="@../css/fullpackstyling.css">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/picture/view_120px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <AnchorPane layoutX="10.0" layoutY="14.0" prefHeight="146.0" prefWidth="171.0" style="-fx-background-color: #f3e6ff; -fx-background-radius: 30 30 30 30;">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <Label fx:id="coolerEXP6" layoutX="13.0" layoutY="124.0">
+                                 <font>
+                                    <Font name="WaffleRegular" size="24.0" />
+                                 </font></Label>
+                              <ImageView fx:id="coolerImage6" fitHeight="89.0" fitWidth="149.0" layoutX="12.0" layoutY="14.0" pickOnBounds="true" />
+                              <Label fx:id="coolerName6" layoutX="13.0" layoutY="107.0">
+                                 <font>
+                                    <Font name="WaffleRegular" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="70.0" fitWidth="88.0" layoutX="16.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/picture/fridge_with_open_door_120px.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="removeCoolerButton" layoutX="15.0" layoutY="251.0" mnemonicParsing="false" onAction="#handleRemoveCoolerButton" prefHeight="70.0" prefWidth="73.0" styleClass="button2remove" stylesheets="@../css/fullpackstyling.css">
+               <graphic>
+                  <ImageView fitHeight="47.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/picture/minus_120px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="6110450634.jnlp">
+  <information>
+    <title>6110450634</title>
+    <vendor>Unknown</vendor>
+    <description>6110450634</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="6110450634.jar" size="213779" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="600" height="400" main-class="refrigerator.MainMenu"  name="6110450634" />
+  <update check="background"/>
+</jnlp>
